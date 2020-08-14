@@ -49,3 +49,9 @@ main {
     position: relative;
     overflow-x: hidden;
 }
+
+footer {
+    background-color: #212529;
+    color: #F8F9FA;
+    padding: 3rem 0;
+}
