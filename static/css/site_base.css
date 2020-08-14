@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@369&display=swap');
+
+html,
+body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+html {
+    overflow-y: hidden;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
