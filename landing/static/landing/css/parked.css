@@ -22,6 +22,7 @@ h1 {
 section {
     padding-top: 4.5rem;
     padding-bottom: 4.5rem;
+    min-height: 80vh;
 }
 
 section:nth-of-type(2n) {
