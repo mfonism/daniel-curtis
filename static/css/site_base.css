@@ -9,8 +9,16 @@ body {
 body {
     /* font-family: 'Roboto', sans-serif; */
     font-family: 'Ubuntu', sans-serif;
-    background-color: #00B596;
-    color: #F8F9FA;
+    background-color: #F8F9FA;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', sans-serif;
 }
 
 .navbar-brand {
