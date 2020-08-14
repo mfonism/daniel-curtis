@@ -1,17 +1,43 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@369&display=swap');
-
 html,
 body {
     position: relative;
     height: 100%;
     width: 100%;
-    overflow-x: hidden;
-}
-
-html {
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 body {
-    font-family: 'Quicksand', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #00B596;
+    color: #F8F9FA;
+}
+
+.navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0
+}
+
+.navbar-brand .brand-wrap {
+    margin-left: -4px;
+}
+
+.brand-wrap img {
+    height: 44px;
+}
+
+.brand-wrap span {
+    margin-top: 4px;
+    margin-left: 4px;
+}
+
+.navbar-toggler {
+    padding: .25rem .35rem;
+}
+
+main {
+    margin-top: 60px;
+    height: calc(100% - 60px);
+    position: relative;
+    overflow-x: hidden;
 }
