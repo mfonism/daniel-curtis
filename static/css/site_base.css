@@ -21,6 +21,10 @@ h6 {
     font-family: 'Roboto', sans-serif;
 }
 
+.navbar {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
 .navbar-brand {
     padding-top: 0;
     padding-bottom: 0
@@ -53,5 +57,5 @@ main {
 footer {
     background-color: #212529;
     color: #F8F9FA;
-    padding: 3rem 0;
+    padding: 2rem 0;
 }
