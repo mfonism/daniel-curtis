@@ -23,7 +23,7 @@ from landing.views import ParkedView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', ParkedView.as_view()),
+    path('', ParkedView.as_view(), name='parked_landing'),
 ]
 
 urlpatterns += static('static/', document_root=settings.STATIC_ROOT)
