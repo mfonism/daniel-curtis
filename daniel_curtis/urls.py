@@ -16,14 +16,13 @@ Including another URLconf
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
-from django.urls import path
+from django.urls import include, path
 
-
-from landing.views import ParkedView
+from landing.urls import urlpatterns as parked_landing_urlpatterns
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', ParkedView.as_view(), name='parked_landing'),
+    path("admin/", admin.site.urls),
+    path("parked/", include(parked_landing_urlpatterns)),
 ]
 
-urlpatterns += static('static/', document_root=settings.STATIC_ROOT)
+urlpatterns += static("static/", document_root=settings.STATIC_ROOT)

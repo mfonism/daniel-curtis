@@ -1,3 +1,4 @@
+from django.urls import reverse_lazy
 from django.views.generic import CreateView
 
 from .models import WantToSee
@@ -12,4 +13,4 @@ class ParkedView(CreateView):
     template_name = "landing/parked.html"
     model = WantToSee
     fields = ["fullname", "email", "message"]
-    success_url = "/"
+    success_url = reverse_lazy("parked_landing")
