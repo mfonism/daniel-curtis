@@ -1,9 +1,15 @@
-from django.views.generic import TemplateView
+from django.views.generic import CreateView
+
+from .models import WantToSee
 
 
-class ParkedView(TemplateView):
+class ParkedView(CreateView):
     """
     Template view for landing page of the parked site.
     """
-    http_method_names = ["get"]
+
+    http_method_names = ["get", "post"]
     template_name = "landing/parked.html"
+    model = WantToSee
+    fields = ["fullname", "email", "message"]
+    success_url = "/"

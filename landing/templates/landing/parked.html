@@ -52,6 +52,15 @@
 
 <section id="contact">
     <h2 class="text-center">Contact Us</h2>
+    <form method="post">
+        {% csrf_token %}
+        <div>
+            {{ form.as_p }}
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+        </div>
+    </form>
 </section>
 {% endblock %}
 
