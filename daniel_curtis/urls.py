@@ -16,11 +16,13 @@ Including another URLconf
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
-from django.urls import include, path
+from django.urls import include, path, reverse_lazy
+from django.views.generic import RedirectView
 
 from landing.urls import urlpatterns as parked_landing_urlpatterns
 
 urlpatterns = [
+    path("", RedirectView.as_view(url=reverse_lazy("parked_landing"))),
     path("admin/", admin.site.urls),
     path("parked/", include(parked_landing_urlpatterns)),
 ]
