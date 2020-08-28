@@ -2,6 +2,7 @@
 
 
 {% load static %}
+{% load crispy_forms_tags %}
 
 
 {% block extra_custom_css %}
@@ -51,16 +52,18 @@
 </section>
 
 <section id="contact">
-    <h2 class="text-center">Contact Us</h2>
-    <form method="post">
-        {% csrf_token %}
-        <div>
-            {{ form.as_p }}
+    <div class="container">
+        <h2 class="text-center">Contact Us</h2>
+        <form method="post">
+            {% csrf_token %}
             <div>
-                <input type="submit" value="Submit">
+                {{ form|crispy }}
+                <div class="text-center mt-4">
+                    <input class="btn btn-primary px-5" type="submit" value="Submit">
+                </div>
             </div>
-        </div>
-    </form>
+        </form>
+    </div>
 </section>
 {% endblock %}
 

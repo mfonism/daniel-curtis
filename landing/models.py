@@ -4,7 +4,7 @@ from django.db import models
 class WantToSee(models.Model):
     fullname = models.CharField(max_length=200)
     email = models.EmailField(max_length=200)
-    message = models.TextField()
+    message = models.TextField("What would you like to see on Daniel Curtis?")
     date = models.DateTimeField(auto_now_add=True)
 
     class Meta:

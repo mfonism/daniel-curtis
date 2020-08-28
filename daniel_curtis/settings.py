@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     # project apps
     "accounts.apps.AccountsConfig",
     "landing.apps.LandingConfig",
+    # third party apps
+    "crispy_forms",
 ]
 
 MIDDLEWARE = [
@@ -137,3 +139,8 @@ SENDGRID_ECHO_TO_STDOUT = True
 
 ADMIN_EMAIL = os.getenv("ADMIN_EMAIL")
 CC_EMAIL_LIST = os.getenv("CC_EMAIL_LIST").split()
+
+
+# CrispyForms settings
+
+CRISPY_TEMPLATE_PACK = "bootstrap4"
