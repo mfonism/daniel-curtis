@@ -1,0 +1,12 @@
+body {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+section {
+    margin-top: 60px;
+}
+
+footer {
+    margin-top: auto;
+}
