@@ -19,47 +19,27 @@
     background-color: #42BBA0;
 }
 
+.hero::after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #0000003D;
+}
+
 h1 {
     position: relative;
+    z-index: 2;
     margin-top: auto;
     margin-bottom: 5.5rem;
     padding: 0.25rem 1.45rem;
-    text-transform: uppercase;
     font-size: 1.75rem;
-}
-
-h1::before,
-h1::after {
-    display: block;
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    content: "";
-}
-
-h1::before {
-    left: 0;
-    right: 50%;
-    background-color: #E91E6381;
-}
-
-h1::after {
-    left: 50%;
-    right: 0;
-    background-color: #FFDC0081;
-}
-
-h1 span {
-    display: block;
-    position: relative;
-    z-index: 2;
-    height: 40px;
-    line-height: 40px;
-}
-
-h1 .text-transparent {
-    color: transparent;
+    font-family: "Raleway", sans-serif;
+    text-align: center;
 }
 
 .quotes {
