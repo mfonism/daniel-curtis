@@ -76,3 +76,9 @@ section h2 {
     font-size: 1.875rem;
     margin-bottom: 1rem;
 }
+
+.social-media .icons a {
+    height: 1.75rem;
+    width: 1.75rem;
+    margin: 0.5rem;
+}
