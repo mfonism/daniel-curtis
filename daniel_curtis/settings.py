@@ -16,7 +16,6 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
@@ -24,7 +23,7 @@ BASE_DIR = Path(__file__).resolve(strict=True).parent.parent
 SECRET_KEY = os.getenv("DJANGO_SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv("DJANGO_DEBUG")
+DEBUG = os.getenv("DJANGO_DEBUG").lower() == "true"
 
 ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS").split()
 
@@ -131,7 +130,6 @@ SENDGRID_API_KEY = os.getenv("SENDGRID_API_KEY")
 
 # Toggle sandbox mode (when running in DEBUG mode)
 SENDGRID_SANDBOX_MODE_IN_DEBUG = True
-SENDGRID_SANDBOX_MODE_IN_DEBUG = False
 
 # echo to stdout or any other file-like object that is passed to
 # the backend via the stream kwarg.
