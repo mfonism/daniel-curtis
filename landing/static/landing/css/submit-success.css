@@ -4,9 +4,16 @@ body {
 }
 
 section {
-    margin-top: 60px;
+    margin-top: 4.75rem;
 }
 
-footer {
+section.social-media {
     margin-top: auto;
+    margin-bottom: 2.5rem;
+}
+
+.social-media .icons a {
+    height: 1.75rem;
+    width: 1.75rem;
+    margin: 0.5rem 0.5rem 0;
 }
